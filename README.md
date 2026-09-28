@@ -2,14 +2,9 @@
 
 Curso: Estándares y Métricas de Calidad de Software · Tema: cumplimiento de estándares en Scrum, Kanban, XP y DevOps.
 
-> Esta es una versión **resuelta** de la plantilla: todos los bloques están completos,
-> las pruebas pasan y la cobertura es del 100 % (la puerta de calidad del CI queda en verde).
-> Úsela como guía o punto de partida; adapte el tablero, las cifras y el plan a su equipo.
-
 ---
 
-## ▶️ Cómo ejecutar y verificar este proyecto (para el profesor / evaluador)
-
+## Cómo ejecutar y verificar este proyecto
 El proyecto es una app en Python con pruebas automáticas. Hay tres formas de comprobarlo;
 la **Opción A** es la más rápida y no requiere instalar nada.
 
@@ -37,17 +32,6 @@ Cada vez que se sube un cambio, GitHub ejecuta las pruebas solo.
    ```
 4. Resultado esperado: **`6 passed`** y **`Required test coverage of 80% reached. Total coverage: 100.00%`**.
 
-### Opción C · Ejecutarlo en un computador local (opcional, requiere Python 3.12)
-```bash
-git clone https://github.com/skizm07/Taller-Auditor-a-de-calidad-de-un-equipo-gi.git
-cd Taller-Auditor-a-de-calidad-de-un-equipo-gi
-python -m venv .venv
-source .venv/bin/activate        # En Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-pytest --cov=src --cov-report=term-missing --cov-fail-under=80
-```
-> Reemplace la URL por la de este repositorio si el nombre es distinto
-> (Code → botón verde → pestaña HTTPS muestra la URL exacta).
 
 ### Dónde está cada entregable
 | Bloque | Entregable | Ubicación |
